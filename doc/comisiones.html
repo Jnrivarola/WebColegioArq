@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <!-- ------------META DATOS--------------------------------------------------------------- -->
+    <meta name="author" content="Gabriel Díaz" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Plataforma de autogestión para profesionales." />
+    <!--Es la descripción que se mostrará debajo del Titulo de la página en un motor de busqueda-->
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords"
+        content="Colegio, Arquitectos, Tierra del Fuego, Patagonia, Arquitectura, Profesionales, autogestion, paltaforma" />
+    <!-- Meta: PALABRAS CLAVES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!--------......-PESTAÑA DEL NAGEGADOR------------------------------------------------------->
+    <!-- TITULO EN LA PESTAÑA DEL NAVEGADOR -->
+    <title>Colegio de Arq TDF</title>
+
+    <!-- ICONO DE LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="icon" href="../icon/CDA.PNG" />
+
+    <!--FRAMEWORKS Y LIBRERÍAS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+    <!-- GOOGLE FONTS -->
+
+    <!-- ----------ENLACE A MI HOJA DE ESTILO EXTERNO CSS------------------------------------- -->
+    <link rel="stylesheet" href="../css/movil.css" />
+    <link rel="stylesheet" href="../css/movil2.css" />
+    <link rel="stylesheet" href="../css/tablet.css" />
+    <link rel="stylesheet" href="../css/tablet2.css" />
+    <link rel="stylesheet" href="../css/compu1.css" />
+    <link rel="stylesheet" href="../css/compu2.css" />
+
+    <!-- ----------HOJAS JAVASCRIPT---------------------------------- -->
+
+    <!-------------ESTILO INTERNO----------------------------------------------------------------->
+    <style></style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- --------------------------------------------------------------------- -->
+        <!--               BARRA DE NAVEGACIÓN                                     -->
+        <!-- --------------------------------------------------------------------- -->
+
+        <nav class="contenedor_nav">
+            <!-- -------lOGO COLEGIO DE ARQ A LA IZQUIERDA                      -->
+            <a href="../index.html" class="contenedor_nav_element nav_element_izq">
+                <figure>
+                    <img src="../icon/CDA.PNG" alt="Logo del Colegio de Arquitectos" />
+                </figure>
+                <h2>
+                    Colegio de <br />
+                    Arquitectos de <br />
+                    Tierra del Fuego
+                </h2>
+            </a>
+
+            <!--         BOTON MENU A LA DERECHA                                   -->
+            <div class="contenedor_nav_element nav_element_der">
+                <!-- ------BOTON MENU--------------------- -->
+                <button class="btn btn-primary nav_menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img src="../icon/menu-right.png" alt="Botón menu" />
+                </button>
+            </div>
+
+            <!--          MENU DESPLEGABLE OFF CANVAS                               -->
+            <div class="offcanvas offcanvas-end offcanvas_contenedor" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <!--    TUTULO                                 -->
+                    <h5 class="offcanvas-title titulo_offcanvas" id="offcanvasRightLabel">
+                        Elige una opción
+                    </h5>
+
+                    <!--    BOTON DE CIERRE                        -->
+                    <button type="button" class="btn_menu_cerrar" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="../icon/close.png" alt="Boton cerrar" />
+                    </button>
+                </div>
+                <!--         CUERPO DEL MENU OFF CANVAS                                   -->
+                <div class="offcanvas-body">
+                    <!--   ACORDEON CON LOS ENLACES PRIMARIOS--------------------------------- -->
+                    <div class="accordion accordion-flush offcanvas-body_accordion" id="accordionFlushExample">
+                        <!-- ----------PROFESIONALES------------------------------------- -->
+                        <div class="accordion-item offcanvas-body_accordion_item">
+                            <h2 class="accordion-header offcanvas-body_accordion_item_h2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Profesionales
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse collapse_body"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body collapse_body_lista">
+                                    <a href="../doc/profesionales-ushuaia.html" alt>Ushuaia</a>
+                                    <a href="../doc/profesionales-riogrande.html">Río Grande</a>
+                                    <a href="../doc/profesionales-tolhuin.html">Tolhuin</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ----------COLEGIO       ------------------------------------ -->
+                        <div class="accordion-item offcanvas-body_accordion_item">
+                            <h2 class="accordion-header offcanvas-body_accordion_item_h2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseDos" aria-expanded="false"
+                                    aria-controls="flush-collapseDos">
+                                    Colegio
+                                </button>
+                            </h2>
+                            <div id="flush-collapseDos"
+                                class="accordion-collapse collapse collapse_body collapse_body_colegio"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body collapse_body_lista">
+                                    <a href="../doc/porque-matricularse.html">¿Por qué matricularse</a>
+                                    <a href="../doc/comisiones.html">Comisiones</a>
+                                    <a href="../doc/autoridades.html">Autoridades</a>
+                                    <a href="">Trámites</a>
+                                    <a href="">Beneficios</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ----------NOTICIAS       ------------------------------------ -->
+                        <div class="accordion-item offcanvas-body_accordion_item">
+                            <h2 class="accordion-header offcanvas-body_accordion_item_h2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTres" aria-expanded="false"
+                                    aria-controls="flush-collapseTres">
+                                    Noticias
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTres"
+                                class="accordion-collapse collapse collapse_body collapse collapse_body_noticias"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body collapse_body_lista">
+                                    <a href="">Novedades</a>
+                                    <a href="">Blog</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ----------LEGISLACIONES       ------------------------------------ -->
+                        <div class="accordion-item offcanvas-body_accordion_item">
+                            <h2 class="accordion-header offcanvas-body_accordion_item_h2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseCuatro" aria-expanded="false"
+                                    aria-controls="flush-collapseCuatro">
+                                    Legislaciones
+                                </button>
+                            </h2>
+                            <div id="flush-collapseCuatro"
+                                class="accordion-collapse collapse collapse_body collapse_body_legislaciones"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body collapse_body_lista">
+                                    <a href="">Colegio de Arquitectos</a>
+                                    <a href="">Municipal</a>
+                                    <a href="">Provincial</a>
+                                    <a href="">Nacional</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ----------SIMULADOR       ------------------------------------ -->
+                        <div class="accordion-item offcanvas-body_accordion_item">
+                            <h2 class="accordion-header offcanvas-body_accordion_item_h2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseCinco" aria-expanded="false"
+                                    aria-controls="flush-collapseCinco">
+                                    Simulador
+                                </button>
+                            </h2>
+                            <div id="flush-collapseCinco"
+                                class="accordion-collapse collapse collapse_body collapse_body_simulador"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body collapse_body_lista">
+                                    <a href="/doc/simulador.html">Calcular</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ----------MI CUENTA       ------------------------------------ -->
+                        <div class="accordion-item offcanvas-body_accordion_item">
+                            <h2 class="accordion-header offcanvas-body_accordion_item_h2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSeis" aria-expanded="false"
+                                    aria-controls="flush-collapseSeis">
+                                    Mi Cuenta
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeis"
+                                class="accordion-collapse collapse collapse_body collapse_body_cuenta"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body collapse_body_lista">
+                                    <a href="">Ver mi Perfil</a>
+                                    <a href="">Entrar / Salir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --------------------------------------------------------------------- -->
+            <!--       MENU CON ENLACES PARA TABLET Y MONITOR                              -->
+            <!-- --------------------------------------------------------------------- -->
+
+            <div class="nav_element_links">
+                <!-- ----------PROFESIONALES BOTON DESPLEGABLE----------------- -->
+                <div class="dropdown dropdown_contenedor">
+                    <button class="btn btn-secondary dropdown_contenedor_btn" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Profesionales
+                    </button>
+
+                    <!-- ------EL DESPLEGABLE---------------------------------- -->
+                    <ul class="dropdown-menu dropdown_contenedor_menu">
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link"
+                                href="../doc/profesionales-ushuaia.html">Ushuaia</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link"
+                                href="../doc/profesionales-riogrande.html">Río Grande</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="../doc/profesionales-tolhuin.html">Tolhuin</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ----------COLEGIO BOTON DESPLEGABLE----------------- -->
+                <div class="dropdown dropdown_contenedor">
+                    <button class="btn btn-secondary dropdown_contenedor_btn" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Colegio
+                    </button>
+
+                    <!-- ------EL DESPLEGABLE---------------------------------- -->
+                    <ul class="dropdown-menu dropdown_contenedor_menu dropdown_contenedor_menu-colegio">
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link"
+                                href="../doc/porque-matricularse.html">¿Por qué matricularse?</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link"
+                                href="../doc/comisiones.html">Comisiones</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="../doc/autoridades.html">Autoridades</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Trámites</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Beneficios</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ----------NOTICIAS BOTON DESPLEGABLE----------------- -->
+                <div class="dropdown dropdown_contenedor">
+                    <button class="btn btn-secondary dropdown_contenedor_btn" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Noticias
+                    </button>
+
+                    <!-- ------EL DESPLEGABLE---------------------------------- -->
+                    <ul class="dropdown-menu dropdown_contenedor_menu">
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Novedades</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ----------LEGISLACIONES BOTON DESPLEGABLE----------------- -->
+                <div class="dropdown dropdown_contenedor">
+                    <button class="btn btn-secondary dropdown_contenedor_btn" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Legislaciones
+                    </button>
+
+                    <!-- ------EL DESPLEGABLE---------------------------------- -->
+                    <ul class="dropdown-menu dropdown_contenedor_menu dropdown_contenedor_menu-colegio">
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Colegio de Arquitectos</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Municipal</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Provincial</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Nacional</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ---------SIMULADOR-BOTON DIRECTO--------------------------- -->
+                <a class="nav_element_links_a" href="doc/simulador.html">Simulador</a>
+
+                <!-- ---------MI CUENTA BOTON DESPLEGABLE----------------- -->
+                <div class="dropdown dropdown_contenedor">
+                    <button class="btn btn-secondary dropdown_contenedor_btn" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Mi Cuenta
+                    </button>
+
+                    <!-- ------EL DESPLEGABLE---------------------------------- -->
+                    <ul class="dropdown-menu dropdown_contenedor_menu">
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Ver mi Perfil</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown_contenedor_menu_link" href="#">Entrar / Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- --------------------------------------------------------------------- -->
+        <!--               BODY CONTENEDOR                                     -->
+        <!-- --------------------------------------------------------------------- -->
+
+        <div class="cuerpo">
+            <div class="cuerpo_elementos cuerpo_seccion">
+                <!-- ------TITULO DE SECCION------------ -->
+                <div class="cuerpo_seccion_titulo">
+                    <h2>Comisiones</h2>
+                </div>
+
+                <!-- ------CONTENIDOS DE LA SECCION------ -->
+                <div class="cuerpo_seccion_cont">
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">Actualización de Encomiendas y Trámites
+                                Municipales</div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Colaboradores:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Martinez, Teresa Beatriz <br>
+                                    Storni, Adriana
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">Extensión Cultural - Río Grande
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Colaboradores:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Cusumano, Micaela <br> Gonzalez, Carolina
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">
+                                Comisión Facebook-Twitter
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Colaboradores:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Matach, Marcelo <br> Segovia, Rocio Graciela <br> Comba, Guillermo Carlos <br>
+                                    Secretaria Administrativa Florencia Ybarra Vega
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">
+                                Comisión Página Web
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Colaboradores:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Matach, Marcelo <br> Segovia, Rocio Graciela <br> Comba, Guillermo Carlos <br>
+                                    Secretaria Administrativa Florencia Ybarra Vega
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">
+                                Extensión Cultural Ushuaia
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Responsable:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Arias, Claudio Marcelo
+                                </p>
+                                <h5 class="card-title">Colaboradores:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Pavlov, David Sergio <br> Oddone, Gustavo Alberto <br> Lupiano, Leonardo
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">
+                                Revisión Código de Edificación
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Responsable:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Trifilio, Silvia Graciela Elisa
+                                </p>
+                                <h5 class="card-title">Colaboradores:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Matach, Marcelo
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">
+                                Comisión para Organización de Eventos
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Responsables:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Celi, Gisela <br> Cruz, Nilda Vanesa <br> Saucedo, Miguel Ángel
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">
+                                Mantenimiento y Equipamiento
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Responsables:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Castagnet, Fernando Jorge
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">
+                                Comisión de Capacitación y Cursos
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Responsables:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Matach, Marcelo
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- --------TARJETA CON LAS COMISIONES--------- -->
+                    <a href="" id="comisiones-contenedor" class="cuerpo_seccion_cont_a">
+                        <div id="comisiones-contenedor-tarjeta" class="card mb-3 cuerpo_seccion_cont_a_card">
+                            <div id="comisiones-titulo" class="card-header">
+                                Comisión para Agencia Ushuaia
+                            </div>
+                            <div id="comisiones-body" class="card-body">
+                                <h5 class="card-title">Titulares:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Matach, Marcelo
+                                </p>
+                                <h5 class="card-title">Suplentes:</h5>
+                                <p id="comisiones-body-txt" class="card-text">
+                                    Guglielmi, Viviana Stella 
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cuerpo_footer"></div>
+    </div>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!--              SCRIPT BOOSTRAP                                           -->
+    <!-- --------------------------------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

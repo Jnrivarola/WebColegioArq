@@ -1,0 +1,29 @@
+/* ------------------------------------------- */
+/*           NOTEBOOK Y MONITORES              */
+/* ------------------------------------------- */
+
+@media screen and (min-width: 1201px) {
+
+    .contenedor .contenedor_nav {
+        height: 85px;
+    }
+
+    .contenedor .contenedor_nav .nav_element_izq {
+        margin-left: 4vw;
+    }
+
+    .contenedor .contenedor_nav .nav_element_izq h2 {
+        font-size: 14px;
+    }
+
+    .contenedor .contenedor_nav .nav_element_links {
+        /* border: 1px dashed blue; */
+        display: flex;
+        margin-right: 4vw;
+    }
+
+    .contenedor .contenedor_nav .nav_element_links .nav_element_links_a {
+        margin: 0px 0px 0px 11px;
+        font-size: 1.6rem;
+    }
+}
